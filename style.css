@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f7ff;
+}
+h1 {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+#map {
+    height: 400px;
+    margin: 10px;
+}
+.info, .galeria {
+    padding: 15px;
+}
+.galeria img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
