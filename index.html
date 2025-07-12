@@ -6,23 +6,98 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff;
+        }
+        h1 {
+            background-color: #0077b6;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #map {
+            flex: 1 1 100%;
+            height: 400px;
+        }
+        .left, .right {
+            padding: 20px;
+            flex: 1 1 300px;
+        }
+        .left {
+            background-color: #003b5c;
+            color: white;
+        }
+        .right {
+            background-color: #00b4d8;
+            color: white;
+        }
+        .right h3, .left h2 {
+            margin-top: 0;
+        }
+        .metrics {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .metric {
+            text-align: center;
+        }
+        .galeria {
+            padding: 20px;
+        }
+        .galeria img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>🌊 Tracker de Nube la Ballena</h1>
+
     <div id="map"></div>
-    <div class="info">
-        <h2>Conoce a Nube</h2>
-        <p><strong>Nombre:</strong> Nube</p>
-        <p><strong>Especie:</strong> Ballena jorobada (<i>Megaptera novaeangliae</i>)</p>
-        <p><strong>Edad:</strong> 12 años</p>
-        <p><strong>Características:</strong> Cicatriz distintiva en la aleta dorsal, personalidad curiosa.</p>
-        <p><strong>Ruta:</strong> Pacífico oriental, entre México y Hawái.</p>
+
+    <div class="container">
+        <div class="left">
+            <h2>About Nube</h2>
+            <p>Nube was first seen near Isla Clarión in 2012. She is one of the first humpback whales monitored by our tagging program, aimed at studying migration, health, and ocean patterns in the Eastern Pacific.</p>
+            <p>Since tagging, Nube has been recorded 15 times and is known for her unique dorsal scar and playful breaches. Data helps us understand whale behavior and the impact of environmental change.</p>
+        </div>
+        <div class="right">
+            <h3>Nube's Travel Log</h3>
+            <p><strong>Date Tagged:</strong> Mar 3, 2024</p>
+            <p><strong>Location Tagged:</strong> Isla Clarión, Mexico</p>
+            <p><strong>Latest Ping:</strong> Jul 12, 2025, 5:26:30 PM</p>
+            <p><strong>Latest Z-Ping:</strong> Jul 11, 2025, 5:10:02 AM</p>
+            <div class="metrics">
+                <div class="metric">
+                    <strong>24 HRS</strong><br>90 mi.
+                </div>
+                <div class="metric">
+                    <strong>72 HRS</strong><br>210 mi.
+                </div>
+                <div class="metric">
+                    <strong>495 DAYS</strong><br>16,450 mi.
+                </div>
+            </div>
+        </div>
     </div>
+
     <div class="galeria">
         <h2>Galería</h2>
         <img src="assets/fotos/nube1.jpg" alt="Nube nadando">
         <img src="assets/fotos/nube2.jpg" alt="Aleta dorsal de Nube">
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
